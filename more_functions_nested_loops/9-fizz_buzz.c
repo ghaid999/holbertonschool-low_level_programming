@@ -13,7 +13,6 @@ int main(void)
 
 	for (i = 1; i <= 100; i++)
 	{
-		printf("%d", i);
 		
 		if ((i % 3 == 0) && (i % 5 == 0))
 		{
@@ -29,7 +28,7 @@ int main(void)
 		}
 		else
 		{
-			continue;
+			printf("%d", i);
 		}
 
 	}
