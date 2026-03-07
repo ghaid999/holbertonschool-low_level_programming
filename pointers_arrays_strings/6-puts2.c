@@ -9,8 +9,9 @@
 void puts2(char *str)
 {
 	int i = 0;
+	int max = 1000; /* safety limit to prevent reading past memory */
 
-	while (str[i] != '\0')
+	while (str[i] != '\0' && i < max)
 	{
 		_putchar(str[i]);
 		i += 2;
