@@ -2,8 +2,8 @@
 
 /**
  * _strcpy - copies the string
- * @dest: pointer to the destination 
- * @src: pointer to the source 
+ * @dest: pointer to the destination
+ * @src: pointer to the source
  *
  * Return: the pointer to dest
  */
