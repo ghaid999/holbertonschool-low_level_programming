@@ -5,7 +5,7 @@
  * mul - multiplies two integers
  * @a and b: The number to multiplie
  *
- * Return:result that contan the result of multiplies two integers 
+ *Return result that contan the result of multiplies two integers 
  */
 
 
