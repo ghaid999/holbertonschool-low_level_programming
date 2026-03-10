@@ -6,7 +6,7 @@
  * @s: string to check
  * @accept: allowed characters
  *
- * Return: pointer to the first charcter that matches one of in accept, or NULL if not found
+ * Return: pointer to the first charcter that matches one of in accept
  */
 
 char *_strpbrk(char *s, char *accept)
