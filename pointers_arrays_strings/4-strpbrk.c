@@ -1,11 +1,12 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * _strspn - gets the length of a prefix substring
+ * _strpbrk -  locates the first occurrence in the string s
  * @s: string to check
  * @accept: allowed characters
  *
- * Return: number of bytes in the initial segment of s
+ * Return:  pointer to the byte in s that matches one of the bytes in accept, or NULL if not found
  */
 
 char *_strpbrk(char *s, char *accept)
@@ -21,16 +22,16 @@ char *_strpbrk(char *s, char *accept)
 		{
 			if (s[i] == accept[j])
 			{
-				break;
+				return (&s[i]);
 			}
 			j++;
 		}
 
 		if (accept[j] == '\0')
-			return (NULL);
+			break;
 
 		i++;
 	}
 
-	return (&accept[j]);
+	return (NULL);
 }
