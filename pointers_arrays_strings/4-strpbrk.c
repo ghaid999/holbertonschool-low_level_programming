@@ -6,7 +6,7 @@
  * @s: string to check
  * @accept: allowed characters
  *
- * Return:  pointer to the byte in s that matches one of the bytes in accept, or NULL if not found
+ * Return: pointer to the in s that matches one of the bytes in accept, or NULL if not found
  */
 
 char *_strpbrk(char *s, char *accept)
