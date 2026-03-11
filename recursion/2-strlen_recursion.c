@@ -12,6 +12,7 @@ int sum;
 	if (*s == '\0')
 		return(0);
 
-	return sum = sum++ +  _print_rev_recursion(s + 1);
+	 sum = sum++ +  _print_rev_recursion(s + 1);
+	return sum;
 	
 }
