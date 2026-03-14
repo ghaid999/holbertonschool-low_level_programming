@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * main - multiplies two numbers
+ * main - adds positive numbers
  * @argc: number of arguments
  * @argv: array of arguments
  *
@@ -11,20 +11,27 @@
 
 int main(int argc, char *argv[])
 {
-	int num1, num2, result;
+int i;
+int sum = 0;
 
-	if (argc != 3)
+	if (argc == 1)
 	{
-		printf("Error\n");
+		printf("0\n");
 		return (1);
 	}
 
-	num1 = atoi(argv[1]);
-	num2 = atoi(argv[2]);
+for (i = 1 ; i < argc ; i++)
+{
+if (isalpha(argv[i]))
+{
+printf("Error\n");
+return (1);
+}
+	
+sum = sum + atoi(argv[i]);
 
-	result = num1 * num2;
+}
+printf("%d\n", sum);
 
-	printf("%d\n", result);
-
-	return (0);
+return (0);
 }
