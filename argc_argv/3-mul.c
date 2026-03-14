@@ -16,7 +16,7 @@ if (argc == 0)
 printf("Error");
 else
 for (i = 1 ; i < 3 ; i++)
-mul = mul * argv[i];
+mul = mul * atoi(argv[i]);
 
 printf("%i\n", mul);
 return (0);
