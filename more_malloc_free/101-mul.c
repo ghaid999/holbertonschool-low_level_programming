@@ -48,7 +48,7 @@ sum = (num1[i] - '0') * (num2[j] - '0') + res[i + j + 1] + carry;
 carry = sum / 10;
 res[i + j + 1] = sum % 10;
 }
-res[i + j + 1] += carry;
+res[i + j] += carry;
 }
 
 /* skip leading zeros */
@@ -109,6 +109,6 @@ exit(98);
 }
 
 printf("%s\n", res);
-free(res);
+free(res); /* free the result to prevent memory leak */
 return 0;
 }
