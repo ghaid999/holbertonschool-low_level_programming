@@ -13,16 +13,16 @@ char *copy;
 int i, len = 0;
 
 if (str == NULL)
-return ( NULL);
+return (NULL);
 
 
 while (str[len] != '\0')
-len++ ;
+len++;
 
 
 copy = (char *)malloc((len + 1) * sizeof(char));
 if (copy == NULL)
-return ( NULL);
+return (NULL);
 
 
 for (i = 0; i < len; i++)
