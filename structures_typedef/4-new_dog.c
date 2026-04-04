@@ -1,7 +1,12 @@
 #include <stdlib.h>
 #include "dog.h"
 
-/* helper: duplicate string manually */
+/**
+* str_copy - duplicates a string manually
+* @str: string to duplicate
+*
+* Return: pointer to the duplicated string, or NULL on failure
+*/
 char *str_copy(char *str)
 {
 char *copy;
