@@ -15,7 +15,6 @@ char *name_copy = NULL;
 char *owner_copy = NULL;
 unsigned int len;
 unsigned int i;
-
 d = malloc(sizeof(dog_t));
 if (d == NULL)
 return (NULL);
