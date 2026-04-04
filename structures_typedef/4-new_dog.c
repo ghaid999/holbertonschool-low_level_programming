@@ -1,13 +1,11 @@
 #include <stdlib.h>
 #include <string.h>
 #include "dog.h"
-
 /**
 * new_dog - creates a new dog
 * @name: name of the dog
 * @age: age of the dog
 * @owner: owner of the dog
-*
 * Return: pointer to the newly created dog, or NULL on failure
 */
 dog_t *new_dog(char *name, float age, char *owner)
@@ -21,8 +19,6 @@ unsigned int i;
 d = malloc(sizeof(dog_t));
 if (d == NULL)
 return (NULL);
-
-/* copy name */
 if (name != NULL)
 {
 len = 0;
@@ -37,8 +33,6 @@ return (NULL);
 for (i = 0; i <= len; i++)
 name_copy[i] = name[i];
 }
-
-/* copy owner */
 if (owner != NULL)
 {
 len = 0;
@@ -54,11 +48,8 @@ return (NULL);
 for (i = 0; i <= len; i++)
 owner_copy[i] = owner[i];
 }
-
-/* assign values */
 d->name = name_copy;
 d->age = age;
 d->owner = owner_copy;
-
 return (d);
 }
