@@ -1,1 +1,1 @@
-more of malloc
+function pointers
