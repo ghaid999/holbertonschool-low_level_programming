@@ -11,7 +11,7 @@
 void print_all(const char * const format, ...)
 {
 	va_list args;
-	unsigned int i = 0, printed = 0;
+	unsigned int i = 0;
 	char *sep = "";
 	char *s;
 
@@ -23,19 +23,16 @@ void print_all(const char * const format, ...)
 		{
 			printf("%s%c", sep, va_arg(args, int));
 			sep = ", ";
-			printed = 1;
 		}
 		else if (format[i] == 'i')
 		{
 			printf("%s%d", sep, va_arg(args, int));
 			sep = ", ";
-			printed = 1;
 		}
 		else if (format[i] == 'f')
 		{
 			printf("%s%f", sep, va_arg(args, double));
 			sep = ", ";
-			printed = 1;
 		}
 		else if (format[i] == 's')
 		{
@@ -44,7 +41,6 @@ void print_all(const char * const format, ...)
 				s = "(nil)";
 			printf("%s%s", sep, s);
 			sep = ", ";
-			printed = 1;
 		}
 		i++;
 	}
