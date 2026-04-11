@@ -13,9 +13,9 @@ void print_all(const char * const format, ...)
 	unsigned int i = 0;
 	char *sep = "";
 	char *s;
-	
+
 	va_start(args, format);
-	
+
 	while (format && format[i])
 	{
 		switch (format[i])
