@@ -1,7 +1,7 @@
 #include <fcntl.h>
 #include <unistd.h>
 #include <stdlib.h>
-#include "lists.h"
+#include "main.h"
 
 /**
  * read_textfile - reads a text file and prints it to stdout
