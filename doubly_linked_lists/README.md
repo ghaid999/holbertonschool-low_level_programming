@@ -1,0 +1,1 @@
+solve double link list
