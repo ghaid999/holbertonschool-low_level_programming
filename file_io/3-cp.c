@@ -14,7 +14,8 @@
  */
 int main(int argc, char *argv[])
 {
-	int fd_from, fd_to, r, w, c_from, c_to;
+	int fd_from, fd_to, r, w;
+	int c_from, c_to;
 	char buffer[BUFF_SIZE];
 
 	if (argc != 3)
