@@ -1,18 +1,32 @@
 #ifndef HASH_TABLES_H
 #define HASH_TABLES_H
 
+/**
+ * struct hash_node_s - hash node
+ * @key: key
+ * @value: value
+ * @next: pointer to the next node
+ */
+
 typedef struct hash_node_s
 {
-    char *key;
-    char *value;
-    struct hash_node_s *next;
+	char *key;
+	char *value;
+	struct hash_node_s *next;
 } hash_node_t;
+
+/**
+ * struct hash_table_s - hash table
+ * @size: size of array
+ * @array: array of linked lists
+ */
 
 typedef struct hash_table_s
 {
-    unsigned long int size;
-    hash_node_t **array;
+	unsigned long int size;
+	hash_node_t **array;
 } hash_table_t;
+
 hash_table_t *hash_table_create(unsigned long int size);
 
 #endif
